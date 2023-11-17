@@ -1,4 +1,4 @@
 export const environment = {
     production: false,
-    base: "https://backendthm.onrender.com",
+    base: "https://backendthmfin-jfdg.onrender.com",
   };
