@@ -68,13 +68,14 @@
                         </ul>
                     </li>
                     <li *ngIf="role == 'CUSTOMER' || role == 'ADMIN'">
-                        <a ><span class="menu-icon material-icons">store</span>Product<span class="submenu-icon2 material-icons">keyboard_arrow_down</span></a>
-                        <ul class="sub-menu">
-                            <li *ngIf="role == 'CUSTOMER'"><a href="/components/Products/new">Add Product</a></li>
-                            <li *ngIf="role == 'ADMIN'"><a href="/components/Products">List Product</a></li>
-                            <li *ngIf="role == 'ADMIN'"><a href="/components/reports/query04">Products Greater</a></li>
-                        </ul>
-                    </li>
+                      <a ><span class="menu-icon material-icons">store</span>Product<span class="submenu-icon2 material-icons">keyboard_arrow_down</span></a>
+                      <ul class="sub-menu">
+                          <li *ngIf="role == 'CUSTOMER'"><a href="/components/Products/new">Add Product</a></li>
+                          <li *ngIf="role == 'ADMIN'"><a href="/components/Products">List Product</a></li>
+                          <li *ngIf="role == 'ADMIN'"><a href="/components/reports/query04">Products Greater</a></li>
+                          <li *ngIf="role == 'ADMIN'"><a href="/components/reports/query01">Total Products</a></li>
+                      </ul>
+                  </li>
                     <li *ngIf="role == 'ADMIN' || role == 'TRAVELER'">
                         <a><span class="menu-icon material-icons">flight</span>Trips<span class="submenu-icon3 material-icons">keyboard_arrow_down</span></a>
                         <ul class="sub-menu">
