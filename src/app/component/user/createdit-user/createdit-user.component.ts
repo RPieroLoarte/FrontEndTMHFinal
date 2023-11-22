@@ -50,7 +50,7 @@ export class CreateditUserComponent implements OnInit {
     });
 
     this.form = this.formBuilder.group({
-      id: [''],
+      idUser: [''],
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       phone: ['', Validators.required],
@@ -105,7 +105,7 @@ export class CreateditUserComponent implements OnInit {
     if (this.edition) {
       this.uS.listId(this.id).subscribe((data) => {
         this.form = new FormGroup({
-          id: new FormControl(data.idUser),
+          idUser: new FormControl(data.idUser),
           name: new FormControl(data.name),
           email: new FormControl(data.email),
           phone: new FormControl(data.phone),
